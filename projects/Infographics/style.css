@@ -57,8 +57,6 @@ body{
 
   padding:45px;
 
-  min-height:320px;
-
   position:relative;
 
   overflow:hidden;
@@ -72,11 +70,11 @@ body{
 }
 
 .hero h1{
-  font-size:clamp(60px,10vw,130px);
-  line-height:.88;
+  font-size:clamp(52px, 9vw, 85px);
+  line-height:.9;
   font-weight:900;
 
-  margin-top:18px;
+  margin-top:180px;
 }
 
 /* NAVIGATION */
