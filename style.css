@@ -433,11 +433,19 @@ body {
   }
 
   .impact-card h2 {
-    font-size: 64px;
+    font-size: 54px;
+  }
+
+  .hero-card a {
+    margin-top: 20px;
   }
 
   .hero-card h1 {
-    font-size: 58px;
+    font-size: 48px;
+  }
+
+  .hero-top {
+    margin-bottom: 20px;
   }
 
   .project-top{
