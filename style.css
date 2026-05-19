@@ -1,0 +1,432 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth
+}
+
+body {
+  background: hsl(272, 100%, 93%);
+  color: #000;
+  font-family: 'Inter', sans-serif;
+}
+
+.layout {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 20px;
+
+  display: grid;
+  grid-template-columns: 1.1fr 1.5fr 0.9fr;
+  gap: 20px;
+}
+
+.lang-switch {
+  display: flex;
+  gap: 8px;
+}
+
+.lang-btn {
+  border: none;
+  background: rgba(255, 255, 255, 0.219);
+  color: white;
+
+  width: 52px;
+  height: 36px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lang-btn:hover {
+  background: rgba(255,255,255,0.16);
+}
+
+.lang-btn.active {
+  background: hsl(281, 100%, 67%);
+  color: white;
+}
+
+.dark-card,
+.white-card,
+.impact-card,
+.project-card {
+  border-radius: 38px;
+  overflow: hidden;
+  position: relative;
+}
+
+.dark-card {
+  background: #111;
+  color: white;
+}
+
+.white-card {
+  background: white;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.hero-card {
+  min-height: 420px;
+  padding: 34px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  opacity: 0.5;
+}
+
+.status {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgb(202, 89, 255);
+}
+
+.status1 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgb(0, 0, 0);
+}
+
+.hero-card h1 {
+  font-size: clamp(52px, 6vw, 72px);
+  line-height: 1;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.hero-card p {
+  max-width: 380px;
+  color: rgba(255,255,255,0.6);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.main-btn {
+  width: fit-content;
+  border: none;
+  background: white;
+  color: black;
+  padding: 18px 26px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.main-btn:hover {
+  transform: scale(1.05);
+}
+
+.impact-card {
+  background: rgb(202, 89, 255);
+  min-height: 420px;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.impact-card::before {
+  content: '';
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  border-radius: 50%;
+  border: 40px solid rgba(0,0,0,0.08);
+
+  right: -120px;
+  bottom: -120px;
+}
+
+.impact-top {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+
+.impact-card h2 {
+  font-size: clamp(70px, 8vw, 120px);
+  line-height: 0.85;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+
+.impact-card p {
+  max-width: 520px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.side-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.services-card,
+.contact-card {
+  padding: 28px;
+}
+
+.services-card {
+  min-height: 200px;
+}
+
+.contact-card {
+  min-height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-label {
+  display: block;
+
+  margin-bottom: 40px;
+
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  opacity: 0.4;
+}
+
+.funpay-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 28px;
+  font-weight: 800;
+
+  color: white;
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.funpay-link:hover {
+  transform: translateX(6px);
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.services-list a {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.service-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  text-decoration: none;
+  color: inherit;
+
+  transition: 0.3s;
+}
+
+.service-link:hover {
+  transform: translateX(8px);
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.bottom-text {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  opacity: 0.3;
+}
+
+.projects-grid {
+  grid-column: 1 / -1;
+
+  columns: 3;
+  column-gap: 20px;
+}
+
+.project-card {
+  break-inside: avoid;
+  text-decoration: none;
+  color: inherit;
+
+  padding: 24px;
+
+  background: white;
+  border: 1px solid rgba(0,0,0,0.08);
+
+  transition: 0.35s;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: scale(1.06);
+}
+
+.project-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 30px;
+
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: rgba(0,0,0,0.45);
+}
+
+.project-card h3 {
+  font-size: 42px;
+  line-height: 0.95;
+  font-weight: 900;
+}
+
+.tall {
+  height: 180px;
+}
+
+.small {
+  height: 180px;
+}
+
+.medium {
+  height: 150px;
+}
+
+.large {
+  height: 150px;
+}
+
+.huge {
+  height: 180px;
+}
+
+.black-project {
+  background: #111;
+  color: white;
+}
+
+.black-project .project-top {
+  color: rgba(255,255,255,0.5);
+}
+
+.accent-card {
+  background: rgb(202, 89, 255);
+}
+
+/* LOADER */
+
+.loader{
+  position:fixed;
+  inset:0;
+
+  background:#c45cff;
+
+  z-index:99999;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  transition:
+    transform 1.2s cubic-bezier(.76,0,.24,1),
+    opacity .8s ease;
+}
+
+.loader.hide{
+  transform:translateY(-100%);
+  opacity:0;
+}
+
+.loader-content{
+  text-align:center;
+}
+
+.loader-label{
+  display:block;
+
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.3em;
+
+  margin-bottom:20px;
+
+  opacity:.6;
+}
+
+.loader-title{
+  font-size:clamp(70px,10vw,180px);
+
+  line-height:.9;
+  font-weight:900;
+}
+
+@media (max-width: 1200px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    columns: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    columns: 1;
+  }
+
+  .impact-card h2 {
+    font-size: 64px;
+  }
+
+  .hero-card h1 {
+    font-size: 58px;
+  }
+
+  .project-top{
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odeyalko1 Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="loader">
+
+        <div class="loader-content">
+
+            <span class="loader-label">
+                ODEYALKO1
+            </span>
+
+            <h1 class="loader-title">
+                DESIGN<br>
+                SYSTEM
+            </h1>
+
+        </div>
+
+    </div>
+
+    <main class="layout">
+
+        <section class="hero-card dark-card">
+            <div class="hero-top">
+                <span data-translate="Portfolio">Портфолио</span>
+
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="ru">RU</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
+
+            <div>
+                <h1 data-translate="heroTitle">
+                    ДИЗАЙН<br>
+                    БЕЗ<br>
+                    ШАБЛОНОВ
+                </h1>
+
+                <p data-translate="heroText">
+                    Сайты, баннеры, инфографика и визуал,
+                    который выглядит как отдельный арт-объект.
+                </p>
+            </div>
+
+            <a href="#down">
+                <button class="main-btn" data-translate="heroButton">
+                    Смотреть работы →
+                </button>
+            </a>
+        </section>
+
+
+        <section class="impact-card">
+            <div class="impact-top">
+                <span data-translate="About">Обо мне</span>
+                <div class="status1"></div>
+            </div>
+
+            <div>
+                <h2 data-translate="Designer">
+                    Odeyalko1 <br>
+                    дизайнер
+                </h2>
+
+                <p data-translate="aboutText">
+                    Начинающий дизайнер, делаю стильные и понятные дизайны на заказ. <br>
+                    Работаю аккуратно, быстро и с вниманием к деталям.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="side-column">
+
+            <div class="services-card white-card">
+                <span data-translate="Directions" class="card-label">Направления</span>
+
+                <div class="services-list">
+                    <a href="projects/Websites/websites.html" class="service-link">
+                        <span data-translate="Websites">Сайты</span>
+                        <span>⮕</span>
+                    </a>
+
+                    <a href="projects/Banners/Banners.html" class="service-link">
+                        <span data-translate="Banners">Баннеры</span>
+                        <span>⮕</span>
+                    </a>
+
+                    <a href="projects/Infographics/Infographics.html" class="service-link">
+                        <span data-translate="Infographics">Инфографика</span>
+                        <span>⮕</span>
+                    </a>
+
+                    <a href="projects/Preview/Preview.html" class="service-link">
+                        <span data-translate="Preview">Превью</span>
+                        <span>⮕</span>
+                    </a>
+
+                    <a href="projects/Presentations/Presentations.html" class="service-link">
+                        <span data-translate="Presentations">Презентации</span>
+                        <span>⮕</span>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="contact-card dark-card">
+                <div>
+                    <span data-translate="Contacts" class="card-label">Контакты</span>
+
+                    <a href="https://funpay.com/" target="_blank" class="funpay-link">
+                        FunPay
+                        <span>⮕</span>
+                    </a>
+                </div>
+
+                <span data-translate="Available" class="bottom-text">
+                    доступно для проектов
+                </span>
+            </div>
+
+        </section>
+
+
+        <a href="./projects/Infographics/Infographics.html" class="project-card tall">
+            <div class="project-top">
+                <span data-translate="Infographics">Инфографика</span>
+                <span>↗</span>
+            </div>
+
+            <div>
+                <h3 data-translate="Infographics_d">Карточки маркетплейсов</h3>
+            </div>
+
+        </a>
+
+        <a href="./projects/Banners/Banners.html" class="project-card huge black-project">
+            <div class="project-top">
+                <span data-translate="Banners">Баннеры</span>
+                <span>↗</span>
+            </div>
+
+            <div>
+                <h3 data-translate="Banners_d">Баннеры для социальных сетей</h3>
+            </div>
+        </a>
+
+        <a href="./projects/Preview/Preview.html" class="project-card small">
+            <div class="project-top">
+                <span data-translate="Preview">Превью</span>
+                <span>↗</span>
+            </div>
+
+            <div>
+                <h3 data-translate="Preview_d">Превью для видео</h3>
+            </div>
+        </a>
+
+
+        <a href="./projects/Websites/websites.html" class="project-card medium">
+            <div class="project-top">
+                <span data-translate="Websites">Сайты</span>
+                <span>↗</span>
+            </div>
+
+            <div>
+                <h3 data-translate="Websites_d">Дизайн сайтов</h3>
+            </div>
+        </a>
+
+
+        <a href="./projects/Presentations/Presentations.html" class="project-card large accent-card" id="down">
+            <div class="project-top">
+                <span data-translate="Presentations">Презентации</span>
+                <span>↗</span>
+            </div>
+
+            <div>
+                <h3 data-translate="Presentations_d">Дизайн презентаций</h3>
+            </div>
+        </a>
+
+        </section>
+
+    </main>
+
+    <script src="/global.js"></script>
+    <script src="js.js"></script>
+</body>
+
+</html>
