@@ -106,7 +106,7 @@ body {
 }
 
 .hero-card h1 {
-  font-size: clamp(52px, 6vw, 72px);
+  font-size: clamp(52px, 6vw, 70px);
   line-height: 1;
   font-weight: 900;
   margin-bottom: 30px;
@@ -170,7 +170,7 @@ body {
 }
 
 .impact-card h2 {
-  font-size: clamp(70px, 8vw, 120px);
+  font-size: clamp(70px, 8vw, 110px);
   line-height: 0.85;
   font-weight: 900;
   margin-bottom: 25px;
@@ -401,6 +401,20 @@ body {
 
   line-height:.9;
   font-weight:900;
+}
+
+@media (max-width: 1700px) {
+  .impact-card h2 {
+    font-size: clamp(70px, 8vw, 87px);
+  }
+
+  .hero-card h1 {
+    font-size: clamp(52px, 6vw, 52px);
+  }
+
+  .project-card h3 {
+    font-size: 32px;
+  }
 }
 
 @media (max-width: 1200px) {
